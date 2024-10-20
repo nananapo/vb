@@ -1,0 +1,13 @@
+module ModuleA {
+    var a: u32;
+
+    function FunctionB (
+        b: output u32,
+    ) {
+        b = 1000;
+    }
+
+    always_comb {
+        FunctionB(a);
+    }
+}
