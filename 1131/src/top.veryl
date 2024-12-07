@@ -1,0 +1,11 @@
+import eei::*;
+
+module top (
+    clk: input clock,
+    rst: input reset,
+) {
+    inst mmio_cntr: mmio_controller::<MEM_DATA_WIDTH, MEM_ADDR_WIDTH> (
+        clk  ,
+        rst  ,
+    );
+}

@@ -1,0 +1,9 @@
+import eei::*;
+
+module mmio_controller::<DATA_WIDTH: const, ADDR_WIDTH: const> (
+    clk: input clock,
+    rst: input reset,
+) {
+    inst mb: membus_if::<DATA_WIDTH, ADDR_WIDTH>;
+    function nop () {}
+}
